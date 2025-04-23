@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Chatbot Container -->
+  <div id="chatbot-container" class="chatbot hidden">
+    <div class="chatbot-header">
+      <img src="{{ url_for('static', filename='img/logo.png') }}" class="bot-logo" alt="Bot Logo" />
+      <div class="bot-title">Support Bot</div>
+    </div>
+    <div id="chat-messages" class="chat-messages"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Floating Chat Button -->
+  <div id="chatbot-button" class="chatbot-bubble">
+    💬
+  </div>
+
+  <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
